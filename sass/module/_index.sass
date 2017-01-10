@@ -24,7 +24,7 @@
 .header-search-form
 	font-size: 19px
 	input[type="text"]
-		color: #d8d6d9
+		color: #32281e
 		border-radius: 5px
 		border: 1px solid #d8d6d9
 		padding: 5px 10px
@@ -40,13 +40,13 @@
 		padding: 5px 3px
 		&:hover
 			animation: blinker 1s linear infinite
-	
+
 	.text-search
 		width: 100%
 		padding-left: 70px !important
 	.loc-search
 		width: 30%
-	
+
 	&.mobile-header-search-form
 		font-size: 16px
 		input[type="text"]
@@ -260,6 +260,11 @@
 		opacity: 1
 
 // ADS list
+.ads-list .whitebox .row .col-sm-6
+	display: inline-block
+	float: none
+	width: 49%
+
 .col-sm-3
 	.ads-list-title
 		font-size: 28px
@@ -311,7 +316,8 @@
 .ad-card-service
 	padding: 3px 7px
 .ad-card-picture
-	padding: 5px
+	padding: 0px
+	overflow: hidden
 	border-radius: 5px
 	border: 1px solid #7e7b7b
 	background: white
@@ -578,6 +584,7 @@
 		font-size: 10px
 	.ad-posted-ago
 		margin-bottom: 3px
+		margin-top: 62px
 
 .ad-author-avatar
 	width: 60px
@@ -593,6 +600,9 @@
 .ad-price
 	text-align: right
 	margin-bottom: 30px
+	position: absolute
+	right: 15px
+	top: 0
 	span
 		background: #369fe0
 		font-family: 'Roboto Slab', serif
@@ -660,7 +670,7 @@
 		color: #000000
 		margin-left: 30px
 		position: absolute
-		top: 0 
+		top: 0
 		left: 0px
 		line-height: 14px
 		@include mq($until: desktop)
@@ -808,7 +818,7 @@ footer .col-sm-2 a
 		font-size: 12px
 	@include mq($until: tablet)
 		margin-top: 20px
-	
+
 .ico-fb
 	width: 42px
 	height: 42px
@@ -837,9 +847,8 @@ footer .col-sm-2 a
 		@include transition(all .4s ease)
 
 .footer-copywrite
-	
+
 .underfooter-navi
 	a:first-child
 		margin-right: 15px
 		display: inline-block
-

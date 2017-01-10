@@ -19,19 +19,19 @@ button.mfp-close
 		top: 25px
 
 // Forms width
-#deactivate-account-popup, #upload-cv-popup, #change-mail-popup, #forget-pass-popup, #change-pass-popup, #email-reference-popup, #leave-feedback-popup, #login-popup, #signup-popup, #user-registration-popup, #free-ad-popup, #send-message-popup, #apply-job-popup, #report-ad-popup
+.delete-listing, #deactivate-account-popup, #upload-cv-popup, #change-mail-popup, #forget-pass-popup, #change-pass-popup, #send-u-message-popup, #email-reference-popup, #leave-feedback-popup, #login-popup, #signup-popup, #user-registration-popup, #free-ad-popup, #send-message-popup, #apply-job-popup, #report-ad-popup
 	background: white
 	border-radius: 20px
 	padding: 0
 	text-align: left
 	margin: 40px auto
 	position: relative
-	max-width: 600
+	max-width: 600px
 
 #upload-cv-popup, #change-mail-popup, #forget-pass-popup, #change-pass-popup, #email-reference-popup, #report-ad-popup
 	max-width: 750px
 
-#deactivate-account-popup, #leave-feedback-popup, #login-popup, #signup-popup, #user-registration-popup, #free-ad-popup, #send-message-popup, #apply-job-popup
+#deactivate-account-popup, #leave-feedback-popup, #login-popup, #signup-popup, #user-registration-popup, #free-ad-popup, #send-message-popup, #send-u-message-popup, #apply-job-popup
 	max-width: 950px
 
 
@@ -174,8 +174,8 @@ button.mfp-close
 			vertical-align: 4px
 	a
 		font-size: 15px
-		margin-left: 15px
-		margin-right: 15px
+		margin-left: 4px
+		margin-right: 4px
 		&:hover
 			opacity: .7
 
@@ -190,10 +190,10 @@ button.mfp-close
 
 
 .popup-overlay
-	background: rgba(black, .5)
+	//background: rgba(black, .5)
 	width: 100%
 	height: 100%
-	position: absolute
+	position: fixed
 	top: 0
 	left: 0
 	content: ' '
